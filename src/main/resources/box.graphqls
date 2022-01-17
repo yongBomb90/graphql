@@ -1,0 +1,24 @@
+type Box {
+   name: String!
+   color: String!
+   address: String
+   price: Int
+}
+
+ input BoxParam {
+   name: String!
+   color: String!
+   address: String
+   price: Int
+}
+
+type Query {
+    getBox(name: String!) : Box!
+    existBox(name: String!) : Boolean
+    countBox: Int
+}
+
+type Mutation {
+    putBox(boxParam: BoxParam) : Boolean
+    delBox(name: String!) : Boolean
+}

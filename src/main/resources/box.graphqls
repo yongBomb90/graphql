@@ -1,7 +1,7 @@
 type Box {
    name: String!
    color: String!
-   address: String
+   address: String!
    price: Int
 }
 
